@@ -10,10 +10,8 @@
 [![Python](https://img.shields.io/badge/python-3.7+-blue.svg?style=flat&labelColor=1a1a1a&color=00D9FF)](https://www.python.org/downloads/)
 [![Powered by](https://img.shields.io/badge/powered%20by-llm7.io-orange?style=flat&labelColor=1a1a1a&color=FF6B35)](https://llm7.io)
 
-
-**Integrate AI into your coding sessions without switching context. Code yourself, get instant error explanations when needed—no LLM GUI required.**
-
 **Future goal:** Transform this into a lightweight desktop app, A small pop-up window you can keep alongside your editor during coding sessions.
+**Contributions are welcome!**
 
 
 </div>
@@ -203,4 +201,5 @@ Contributions are welcome! Feel free to:
 - Powered by [llm7.io](https://llm7.io)
 
 ---
+
 
