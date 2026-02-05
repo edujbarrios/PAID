@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/paid.png" alt="PAID Logo" width="100" />
+<img src="assets/paid.png" alt="PAID Logo" width="370" />
 
 # 🐛 PAID: Python AI Debugger
 
@@ -88,7 +88,7 @@ with AutoDebug(api_key="Unused"):
 
 ## Example generated AI powered output
 
-```markdown
+```txt
 ======================================================================
 🔍 ERROR DETECTED - Analyzing with AI...
 ======================================================================
@@ -100,9 +100,7 @@ The error is a `ZeroDivisionError`, which means the code tried to divide a numbe
 
 ### 2. WHERE IT OCCURS
 The error occurs on this line in your `calculate_average` function:
-```python
-return total / count
-```
+`return total / count`
 
 ### 3. WHY IT OCCURS
 The root cause of the error is that the `count` variable is zero. The function `calculate_average` attempts to compute the average of a list of numbers by dividing the sum of those numbers by the number of elements in the list. However, when the list is empty (`[]`), the `len(numbers)` returns zero, leading to a division by zero.
@@ -110,7 +108,6 @@ The root cause of the error is that the `count` variable is zero. The function `
 ### 4. HOW TO FIX IT
 To fix this error, you need to add a check to ensure that the list is not empty before performing the division. Here's the corrected code with added checks:
 
-```python
 def calculate_average(numbers):
     if len(numbers) == 0:  # Check if the list is empty
         return None  # Return None or any other appropriate value or handle the case as needed
@@ -120,11 +117,9 @@ def calculate_average(numbers):
 
 result = calculate_average([])  # This will return None
 print(f"Average: {result}")  # Output: Average: None
-```
 
 Alternatively, you could print a message if the list is empty:
 
-```python
 def calculate_average(numbers):
     if len(numbers) == 0:
         print("Cannot calculate average of an empty list.")
@@ -135,7 +130,6 @@ def calculate_average(numbers):
 
 result = calculate_average([])
 print(f"Average: {result}")  # Output: Cannot calculate average of an empty list. Average: None
-```
 
 ### 5. BEST PRACTICES
 To avoid this kind of error in the future, consider these defensive programming techniques:
@@ -146,7 +140,6 @@ To avoid this kind of error in the future, consider these defensive programming 
 
 Here's an example with a custom exception for better handling:
 
-```python
 class EmptyListError(Exception):
     pass
 
@@ -162,7 +155,6 @@ try:
     print(f"Average: {result}")
 except EmptyListError as e:
     print(e)  # Output: Cannot calculate average of an empty list.
-```
 
 This way, you clearly indicate when an empty list is provided, and the function behavior is well-defined for such cases.
 
@@ -211,3 +203,4 @@ Contributions are welcome! Feel free to:
 - Powered by [llm7.io](https://llm7.io)
 
 ---
+
