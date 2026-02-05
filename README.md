@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/paid.png" alt="PAID Logo" width="370" />
+<img src="assets/paid.png" alt="PAID Logo" width="200" />
 
 # 🐛 PAID: Python AI Debugger
 
@@ -201,5 +201,6 @@ Contributions are welcome! Feel free to:
 - Powered by [llm7.io](https://llm7.io)
 
 ---
+
 
 
